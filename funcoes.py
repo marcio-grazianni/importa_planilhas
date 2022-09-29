@@ -10,7 +10,10 @@ def retorna_plano_conta(texto: str):
     # F = 49 = FILHAS
     # T = 51 = TRANSPORTE
     # R = 54 = REMEDIOS
-    retorno = 0
+    # N = 50 = ANA
+    # O = 52 = OUTRAS
+
+    retorno = None
     if (texto.upper() == "A"):
         retorno = 55
     elif (texto.upper() == "F"):
@@ -19,5 +22,9 @@ def retorna_plano_conta(texto: str):
         retorno = 51
     elif (texto.upper() == "R"):
         retorno = 54
+    elif (texto.upper() == "N"):
+        retorno = 50
+    elif (texto.upper() == "O"):
+        retorno = 52
 
     return retorno
