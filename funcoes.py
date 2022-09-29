@@ -1,3 +1,18 @@
+import platform
+import os
+
+
+def retorna_os():
+    return platform.system().upper()
+
+
+def limpa_tela():
+    if retorna_os() == "WINDOWS":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+
 def converte_data_sql(data: str):
     # 19/09/2022
     retorno = data[6:10] + "-" + data[3:5] + "-" + data[0:2]
