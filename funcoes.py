@@ -27,6 +27,8 @@ def retorna_plano_conta(texto: str):
     # R = 54 = REMEDIOS
     # N = 50 = ANA
     # O = 52 = OUTRAS
+    # C = 48 = CASA
+    # U = 43 = CASA MATERIAL DE CONSTRUÇÃO
 
     retorno = None
     if (texto.upper() == "A"):
@@ -41,5 +43,9 @@ def retorna_plano_conta(texto: str):
         retorno = 50
     elif (texto.upper() == "O"):
         retorno = 52
+    elif (texto.upper() == "C"):
+        retorno = 48
+    elif (texto.upper() == "U"):
+        retorno = 43
 
     return retorno
