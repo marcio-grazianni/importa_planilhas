@@ -10,6 +10,7 @@ from pathlib import Path
 
 codigo_forma_pagamento: str = "2"
 texto2: str = "nubank.xlsx"
+quantidade_importacoes: int = 0
 
 fn.limpa_tela()
 codigo_forma_pagamento = inp.inputInt(prompt="Código da forma de pagamento: ", min=2, max=3, blank=True)
@@ -44,6 +45,7 @@ else:
                 );
             """
             cursor.execute(sql01, (fn.converte_data_sql(linha["Data"]), fn.retorna_plano_conta(linha["Tipo"]), 1, linha["Descrição"], linha["Valor"], codigo_usuario))
+            quantidade_importacoes = quantidade_importacoes + 1
 
             sql01 = "SELECT max(numero_controle) as ultimo FROM lancamento_tesouraria;"
             cursor.execute(sql01)
@@ -68,3 +70,4 @@ else:
 
     cursor.close()
     conexao.close()
+    print("Quantidade de importações:", quantidade_importacoes)
