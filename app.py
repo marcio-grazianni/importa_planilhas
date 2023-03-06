@@ -44,7 +44,7 @@ else:
                     %s, %s, %s, %s, %s, %s
                 );
             """
-            cursor.execute(sql01, (fn.converte_data_sql(linha["Data"]), fn.retorna_plano_conta(linha["Tipo"]), 1, linha["Descrição"], linha["Valor"], codigo_usuario))
+            cursor.execute(sql01, (fn.converte_data_sql(linha["Data"]), fn.retorna_plano_conta(linha["Tipo"]), 1, linha["Descrição"].encode('latin-1','ignore').decode("latin-1"), linha["Valor"], codigo_usuario))
             quantidade_importacoes = quantidade_importacoes + 1
 
             sql01 = "SELECT max(numero_controle) as ultimo FROM lancamento_tesouraria;"
