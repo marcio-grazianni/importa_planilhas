@@ -1,3 +1,6 @@
+# Formato da planilha
+# Data, Tipo, Descrição, Valor
+
 import pandas as pd
 import psycopg2
 import psycopg2.extras
