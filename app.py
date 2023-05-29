@@ -13,6 +13,20 @@ texto2: str = "nubank.xlsx"
 quantidade_importacoes: int = 0
 
 fn.limpa_tela()
+
+print("Formato da planilha")
+print("Data, Tipo, Descrição, Valor")
+print("")
+print("A = 55 = ALIMENTACAO")
+print("F = 49 = FILHAS")
+print("T = 51 = TRANSPORTE")
+print("R = 54 = REMEDIOS")
+print("N = 50 = ANA")
+print("O = 52 = OUTRAS")
+print("C = 48 = CASA")
+print("U = 43 = CASA MATERIAL DE CONSTRUÇÃO")
+print("")
+
 codigo_forma_pagamento = inp.inputInt(prompt="Código da forma de pagamento: ", min=2, max=3, blank=True)
 caminho_planilha = inp.inputFilename(prompt="Nome da planilha para importar: ", blank=True)
 
