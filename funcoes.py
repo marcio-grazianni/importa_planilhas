@@ -25,7 +25,7 @@ def retorna_plano_conta(texto: str):
     # F = 49 = FILHAS
     # T = 51 = TRANSPORTE
     # R = 54 = REMEDIOS
-    # N = 50 = ANA
+    # N = 44 = ANA
     # O = 52 = OUTRAS
     # C = 48 = CASA
     # U = 43 = CASA MATERIAL DE CONSTRUÇÃO
@@ -40,12 +40,36 @@ def retorna_plano_conta(texto: str):
     elif (texto.upper() == "R"):
         retorno = 54
     elif (texto.upper() == "N"):
-        retorno = 50
+        retorno = 44
     elif (texto.upper() == "O"):
         retorno = 52
     elif (texto.upper() == "C"):
         retorno = 48
     elif (texto.upper() == "U"):
         retorno = 43
+    elif (texto.upper() == "P1"):
+        retorno = 64
+    elif (texto.upper() == "P2"):
+        retorno = 35
+    elif (texto.upper() == "P3"):
+        retorno = 36
+    elif (texto.upper() == "P4"):
+        retorno = 37
+    elif (texto.upper() == "P5"):
+        retorno = 38
+    elif (texto.upper() == "P6"):
+        retorno = 42
+    elif (texto.upper() == "P7"):
+        retorno = 32
+    elif (texto.upper() == "P8"):
+        retorno = 46
+    elif (texto.upper() == "P9"):
+        retorno = 41
+    elif (texto.upper() == "P10"):
+        retorno = 47
+    elif (texto.upper() == "P11"):
+        retorno = 62
+    elif (texto.upper() == "P12"):
+        retorno = 58
 
     return retorno
