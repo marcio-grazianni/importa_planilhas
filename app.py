@@ -38,6 +38,7 @@ print("P9 = 41 = INTERNET")
 print("P10 = 47 = ALIMENTACAO DAS FILHAS")
 print("P11 = 62 = ALUGUEL")
 print("P12 = 58 = AMAZON PRIME (BRADESCO)")
+print("P13 = 65 = HIGIENE PESSOAL")
 print("")
 
 codigo_forma_pagamento = inp.inputInt(prompt="Código da forma de pagamento: ", min=2, max=3, blank=True)
