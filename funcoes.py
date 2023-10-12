@@ -79,5 +79,7 @@ def retorna_plano_conta(texto: str):
         retorno = 44
     elif (texto.upper() == "P16"):
         retorno = 66
+    elif (texto.upper() == "P17"):
+        retorno = 67
 
     return retorno
