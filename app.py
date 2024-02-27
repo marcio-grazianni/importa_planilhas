@@ -11,7 +11,7 @@ from pathlib import Path
 codigo_forma_pagamento: str = "2"
 texto2: str = "nubank.xlsx"
 quantidade_importacoes: int = 0
-linha_separadora: str = "-" * 100
+linha_separadora: str = "-" * 90
 
 fn.limpa_tela()
 
