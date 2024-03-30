@@ -51,8 +51,8 @@ def retorna_plano_conta(texto: str):
         retorno = 64
     elif (texto.upper() == "P2"):
         retorno = 35
-    elif (texto.upper() == "P3"):
-        retorno = 36
+    # elif (texto.upper() == "P3"):
+    #     retorno = 36
     elif (texto.upper() == "P4"):
         retorno = 37
     elif (texto.upper() == "P5"):
@@ -61,8 +61,8 @@ def retorna_plano_conta(texto: str):
         retorno = 42
     elif (texto.upper() == "P7"):
         retorno = 32
-    elif (texto.upper() == "P8"):
-        retorno = 46
+    # elif (texto.upper() == "P8"):
+    #     retorno = 46
     elif (texto.upper() == "P9"):
         retorno = 41
     elif (texto.upper() == "P10"):
@@ -73,14 +73,14 @@ def retorna_plano_conta(texto: str):
         retorno = 58
     elif (texto.upper() == "P13"):
         retorno = 65
-    elif (texto.upper() == "P14"):
-        retorno = 63
-    elif (texto.upper() == "P15"):
-        retorno = 44
+    # elif (texto.upper() == "P14"):
+    #     retorno = 63
+    # elif (texto.upper() == "P15"):
+    #     retorno = 44
     elif (texto.upper() == "P16"):
         retorno = 66
-    elif (texto.upper() == "P17"):
-        retorno = 67
+    # elif (texto.upper() == "P17"):
+    #     retorno = 67
     elif (texto.upper() == "P18"):
         retorno = 70
     elif (texto.upper() == "P19"):
