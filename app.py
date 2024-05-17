@@ -47,6 +47,8 @@ print("P18 = 70 = COMBUSTÍVEL")
 print("P19 = 71 = FILHA LÍLIAN")
 print("P20 = 72 = FILHA LETÍCIA")
 print("P21 = 73 = FILHA LAURA")
+print("P22 = 68 = ROUPAS")
+print("P23 = 69 = CALÇADOS")
 print("")
 
 codigo_forma_pagamento = inp.inputInt(prompt="Código da forma de pagamento: ", min=2, max=3, blank=True)
